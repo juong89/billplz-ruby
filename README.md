@@ -13,3 +13,15 @@ API FLow:<br />
 7) Billplz sends a server-side update to your site on Bill's status on payment failure or success.<br />
 8a) Billplz redirects the customer back to your site if redirect_url is not empty, or<br />
 8b) The customer will see Billplz receipt. <br />
+
+<br />
+<h1>Steps</h1>
+<h3>1. Install Gem HTTPARTY</h3>
+gem install httparty
+<br />
+
+<h3>2. Use the code provided in your controller. paymentsController.rb</h3>
+<h3>3. Done!</h3>
+
+
+
