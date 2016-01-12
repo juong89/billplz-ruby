@@ -17,7 +17,7 @@ API FLow:<br />
 <br />
 <h1>Steps</h1>
 <h3>1. Install Gem HTTPARTY</h3>
-gem install httparty
+gem install httparty , refer here: https://github.com/jnunemaker/httparty
 <br />
 
 <h3>2. Use the code provided in your controller. paymentsController.rb</h3>
