@@ -20,4 +20,14 @@ class PaymentsController < ApplicationController
         
     redirect_to @bill.parsed_response["url"]
   end
+  def get_bill
+    url_bill = "https://www.billplz.com/api/v2/bills/#{params[:billplz][:id]}"
+    api_key = 'YOUR-API-SECRECT-KEY' #You can get the secret key in your billplz's setting account
+    
+		@get_bill = HTTParty.get(url_bill,
+			         :basic_auth => { :username => api_key },
+			         :headers => { 'Content-Type' => 'application/json', 'Accept' => 'application/json' })
+		@paid = @get_bill.parsed_response["paid"]
+		#others data you can check at billplz api
+  end
 end
